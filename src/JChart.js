@@ -1,4 +1,4 @@
-window.JingleChart = JChart = {
+var JChart = {
     version : '0.1',
     animationOptions : {
         linear : function (t){

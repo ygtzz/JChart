@@ -1,9 +1,9 @@
-  ;(function(_){
+;(function(_){
     function Polar(data,cfg){
-    	_.Scale.apply(this);
+        _.Scale.apply(this);
         var _this = this;
         this.data = this.chartData = data;
-  		//配置项
+        //配置项
         _.extend(this.config,{
             drawScaleFirst : false,
             //是否显示刻度文本背景
@@ -42,12 +42,12 @@
         
         this.draw = function(noAnim){
             this.mergeFont(['scaleFont','textFont']);
-        	this.initScale();
+            this.initScale();
             if(noAnim){
                 this.drawAllSegments(1);
                 this.drawScale();
             }
-        	this.doAnim(this.drawScale,this.drawAllSegments);
+            this.doAnim(this.drawScale,this.drawAllSegments);
         }
         function tapHandler(x,y){
             var i = isInSegment(x,y);
@@ -69,7 +69,7 @@
         }
         
         this.drawScale = function(){
-        	var cfg = this.config,scale = this.scaleData,x = this.width/2, y = this.height/2
+            var cfg = this.config,scale = this.scaleData,x = this.width/2, y = this.height/2
                 size = cfg.scaleFont.size,px = cfg.scaleBackdropPaddingX,py = cfg.scaleBackdropPaddingY;
             this.ctx.save().translate(x,y);
 
@@ -111,7 +111,7 @@
 
         this.drawAllSegments = function(animPc){
             var startAngle = -Math.PI/2,angleStep = (Math.PI*2)/this.data.datasets.length,
-               scaleAnim = 1,rotateAnim = 1,
+                scaleAnim = 1,rotateAnim = 1,
                 scale = this.scaleData,cfg = this.config,
                 borderColor,borderWidth;
             if (cfg.animation) {
@@ -164,7 +164,7 @@
 
         //初始化参数
         if(cfg)this.initial(cfg);
-  
+
     }
     _.Polar = Polar;
-  })(JChart);
+})(JChart);

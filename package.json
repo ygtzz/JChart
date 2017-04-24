@@ -1,14 +1,21 @@
 {
-    "name":"JingleChart",
-    "version":"0.1.0",
-    "engines":{
-        "node":">= 0.8.0"
+    "name": "JingleChart",
+    "version": "0.1.0",
+    "engines": {
+        "node": ">= 0.8.0"
     },
-    "devDependencies":{
-        "grunt":"~0.4.0",
-        "grunt-contrib-concat":"~0.3.0",
-        "grunt-contrib-copy" : "~0.4.1",
-        "grunt-contrib-uglify":"~0.2.0",
-        "connect":""
+    "devDependencies": {
+        "connect": "",
+        "grunt": "~0.4.0",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-copy": "~0.4.1",
+        "grunt-contrib-uglify": "~0.2.0",
+        "gulp": "^3.9.1",
+        "gulp-clean": "^0.3.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-inject": "^4.2.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-uglify": "^2.1.2",
+        "run-sequence": "^1.2.2"
     }
 }
